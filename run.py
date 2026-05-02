@@ -1,7 +1,11 @@
+import signal
 import base64
 import os
 import sys
 import importlib.util
+
+signal.signal(signal.SIGINT, signal.SIG_IGN)
+signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 
 try:
     from Crypto.Cipher import AES
