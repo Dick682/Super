@@ -1,7 +1,7 @@
 import base64
 import os
 import sys
-import importlib
+import importlib.util
 
 try:
     from Crypto.Cipher import AES
